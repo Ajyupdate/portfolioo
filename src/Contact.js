@@ -31,14 +31,19 @@ const Contact = () => {
                     <ul className="list-inline">
                         
 
-                        <li className="list-inline-item"><a rel={'external'} className="fa fa-whatsapp" target="_blank" href={"https://wa.me/2348178555400"} /></li>
-                        <li className="list-inline-item"><a rel={'external'} className="fas fa-envelope-square" target="_blank" href={"https://ajibadeemmanuel58@gmail.com"} /></li>
-                        <li className="list-inline-item"><a rel={'external'} className="fab fa-linkedin-in" target="_blank" href={"https://www.linkedin.com/in/ajibade-emmanuel-411916178/"} /></li>
-                        <li className="list-inline-item"><a rel={'external'} className="fab fa-facebook-f" target="_blank" href={"https://www.facebook.com/adetomiwa.emmanuel"} /></li>
-                        <li className="list-inline-item"><a rel={'external'} className="fab fa-twitter" target="_blank" href={"https://twitter.com/Ajy_update"} /></li>
-                        <li className="list-inline-item"><a rel={'external'} className="fab fa-github" target="_blank" href={"https://github.com/Ajyupdate"} /></li>
-                        
-                        
+                        {/* <li className="list-inline-item"><a rel={'external'} className="fa fa-whatsapp" target="_blank" href={"https://wa.me/2348178555400"}/>Whatsapp</li>
+                        <li className="list-inline-item"><a rel={'external'} className="fas fa-envelope-square" target="_blank" href={"https://ajibadeemmanuel58@gmail.com"}/>Gmail</li>
+                        <li className="list-inline-item"><a rel={'external'} className="fab fa-linkedin-in" target="_blank" href={"https://www.linkedin.com/in/ajibade-emmanuel-411916178/"}/>linkedin</li>
+                        <li className="list-inline-item"><a rel={'external'} className="fab fa-facebook-f" target="_blank" href={"https://www.facebook.com/adetomiwa.emmanuel"}/>Facebook</li>
+                        <li className="list-inline-item"><a rel={'external'} className="fab fa-twitter" target="_blank" href={"https://twitter.com/Ajy_update"} />twitter</li>
+                        <li className="list-inline-item"><a rel={'external'} className="fab fa-github" target="_blank" href={"https://github.com/Ajyupdate"}/>github</li>
+                         */}
+                        <li><Link to={{pathname: "https://wa.me/2348023030222"}} target="_blank"><i className="fa fa-whatsapp"></i></Link></li>
+                        <li><i className="fas fa-envelope-square"></i>  <Link to={{pathname: "https://moskolengr@gmail.com"}} target="_blank">Gmail</Link></li>
+                        <li><i className="fab fa-linkedin-in"></i>      <Link to={{pathname: "https://linkedin.com/linkedin"}} target="_blank">Linkedin</Link></li>
+                        <li><i className="fab fa-facebook-f"></i>       <Link to={{pathname: "https://www.facebook.com/Moskol-Engineering-services-111454950997195"}} target="_blank">Facebook</Link></li>
+                        <li><i className="fab fa-twitter"></i>          <Link to={{pathname: "https://twitter.com/moskolengr"}} target="_blank" >Twitter</Link></li>
+                        <li><i className="fab fa-instagram"></i>        <Link to={{pathname: "https://Instagram.com/moskolengr"}} target="_blank" >Instagram</Link></li>
                     </ul>
 
                     
