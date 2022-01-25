@@ -1,19 +1,27 @@
+import facebookIcon from './image/facebookIcon.jpg'
+import githubIcon from './image/githubIcon.jpg'
+import gmailIcon from './image/gmailIcon.jpg'
+import TwitterIcon from './image/TwitterIcon.jpg'
+import watsappIcon from './image/watsappIcon.jpg'
+import linkdinIcon from './image/linkdinIcon.svg'
+
+
 
 const Contact = () => {
     
     
     return ( 
 
-        <div className="container text-center m-3">
+        <div className="container text-center w-50 mt-5">
             <h2>Contact Ajibade</h2>
-            <div className="container row">
+            <div className="container text-center">
                 
-                <div className="col-md-6">
+                <div className="">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" className="form-text">I will never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputText1" className="form-label">Your Name</label>
@@ -25,29 +33,33 @@ const Contact = () => {
                             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
 
-                        <button type="submit" className="btn btn-primary">Send</button>
-                    </form>
-`   `                </div>
+                        <div className="d-grid gap-2 send-button">
+                            <button className="btn " type="button">Send</button>
+                        </div>
 
-                <div className="col-md-6">
-                    <h6 className="m-5">You can reach out to me on social media</h6>
-                    <ul className="list-inline">
                         
-                        
+                    </form>
+                    <div className="social-contact-div">
+                        <h6 className="mt-4">You can reach out to me on social media</h6>
                         
                         {/* <li className="list-inline-item"><a rel={"noreferrer"}  className="fa fa-whatsapp" target="_blank" href={"https://wa.me/2348178555400"}/></li> */}
+                        <div className="social-media-div">
+                        <div><a target="_blank" rel="noreferrer" href="https://wa.me/2348178555400"><img src={watsappIcon} className="img-fluid " alt='Ajibade'/></a></div>
+                        <div><a target="_blank" rel="noreferrer" href="https://ajibadeemmanuel58@gmail.com"><img src={gmailIcon} className="img-fluid mt-1" alt='Ajibade'/></a></div>
+                        <div><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ajibade-emmanuel-411916178/"><img src={linkdinIcon} className="img-fluid" alt='Ajibade'/></a></div>
+                        <div><a target="_blank" rel="noreferrer" href="https://www.facebook.com/adetomiwa.emmanuel"><img src={facebookIcon} className="img-fluid" alt='Ajibade'/></a></div>
+                        <div><a target="_blank" rel="noreferrer" href="https://twitter.com/Ajy_update"><img src={TwitterIcon} className="img-fluid " alt='Ajibade'/></a></div>
+                        <div><a target="_blank" rel="noreferrer" href="https://github.com/Ajyupdate"><img src={githubIcon} className="img-fluid " alt='Ajibade'/></a></div> 
+                    </div>
+
                         
+                        </div>
 
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://wa.me/2348178555400"><i className="fa fa-whatsapp"></i></a></li>
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://ajibadeemmanuel58@gmail.com"><i className="fas fa-envelope-square"></i></a></li>
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ajibade-emmanuel-411916178/"><i className="fab fa-linkedin-in"></i></a></li>
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://www.facebook.com/adetomiwa.emmanuel"><i className="fab fa-facebook-f"></i></a></li>
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://twitter.com/Ajy_update"><i className="fab fa-twitter"></i></a></li>
-                        <li className="list-inline-item"><a target="_blank" rel="noreferrer" href="https://github.com/Ajyupdate"><i className="fab fa-github"></i></a></li> 
-                    </ul>
-
+                        
                     
                 </div>
+
+                
             </div>
         </div>
      );

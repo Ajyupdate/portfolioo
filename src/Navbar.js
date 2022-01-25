@@ -5,10 +5,10 @@ const Navbar = () => {
             
 
 
-            <nav className="navbar navbar-light  fixed-top">
+            <nav className=" navbar navbar-light  fixed-top">
             <div className="container-fluid">
-              <Link className="navbar-brand" to="/">AJIBADE EMMANUEL</Link>
-              <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <Link className="navbar-brand" to="/"><span className="Ajibade">AJIBADE</span> <span className="Emmanuel">EMMANUEL</span></Link>
+              <button className="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
