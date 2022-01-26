@@ -3,7 +3,7 @@ import EMMANUEL from './cv/EMMANUEL.pdf'
 import { Link } from 'react-router-dom';
 const About = () => {
     return ( 
-        <div className=" row mt-5">
+        <div className=" row mt-5 ">
             <div className="col-md-6 container about-div">
                 <h1 className='m-5 about-me'><b>ABOUT ME</b></h1>
             
@@ -34,8 +34,8 @@ const About = () => {
                 
                 
             </div>
-            <div className='col-md-6'>
-                <img src={Ajibade} className="img-fluid m-2" alt='Ajibade'/>
+            <div className='col-md-5'>
+                <img src={Ajibade} className="img-fluid" alt='Ajibade'/> 
             </div>
 
         </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
               </button>
               <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
-                  <h5 className="offcanvas-title" id="offcanvasNavbarLabel">AJIBADE EMMANUEL</h5>
+                  <h5 className="offcanvas-title" id="offcanvasNavbarLabel"><span className="Ajibade">AJIBADE</span> <span className="Emmanuel">EMMANUEL</span></h5>
                   <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
