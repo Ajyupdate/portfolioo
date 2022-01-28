@@ -12,11 +12,11 @@ const Contact = () => {
     
     return ( 
 
-        <div className="container text-center w-50 mt-5">
+        <div className="container text-center w-70 mt-5">
             <h2>Contact Ajibade</h2>
             <div className="container text-center">
                 
-                <div className="">
+                <div className="contact-form">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
