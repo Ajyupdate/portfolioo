@@ -13,18 +13,18 @@ const Contact = () => {
     return ( 
 
         <div className="container text-center w-70 mt-5">
-            <h2>Contact Ajibade</h2>
+            <h2 data-aos="slide-up" >Contact Ajibade</h2>
             <div className="container text-center">
                 
                 <div className="contact-form">
                     <form>
                         <div className="mb-3">
-                            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                            <label htmlFor="exampleInputEmail1" data-aos="fade-right" className="form-label">Email address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                            <div id="emailHelp" className="form-text">I will never share your email with anyone else.</div>
+                            <div id="emailHelp" data-aos="fade-left" className="form-text">I will never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="exampleInputText1" className="form-label">Your Name</label>
+                            <label htmlFor="exampleInputText1" data-aos="fade-right" className="form-label">Your Name</label>
                             <input type="Text" className="form-control" id="exampleInputText1"/>
                         </div>
                         
@@ -34,13 +34,13 @@ const Contact = () => {
                         </div>
 
                         <div className="d-grid gap-2 send-button">
-                            <button className="btn " type="button">Send</button>
+                            <button className="btn"  type="button">Send</button>
                         </div>
 
                         
                     </form>
                     <div className="social-contact-div">
-                        <h6 className="mt-4">You can reach out to me on social media</h6>
+                        <h6 className="mt-4" >You can reach out to me on social media</h6>
                         
                         {/* <li className="list-inline-item"><a rel={"noreferrer"}  className="fa fa-whatsapp" target="_blank" href={"https://wa.me/2348178555400"}/></li> */}
                         <div className="social-media-div">

@@ -7,17 +7,9 @@ import calculator from './image/calculator.png'
 const Projects = () => {
   return ( 
     <div className="container  project-container">
-      <h2>Projects</h2>
+      <h2 data-aos="fade-right">Projects</h2>
 
-      
-
-
-
-
-
-
-
-    <div className="accordion accordion-flush" id="accordionExample">
+    <div className="accordion accordion-flush" data-aos="fade-down" id="accordionExample">
       <div className="accordion-item">
         <h2 className="accordion-header" id="headingOne">
           <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -36,8 +28,8 @@ const Projects = () => {
             
             <div className='project-button-div'>
     
-              <button type="button" className="btn live-btn "><a href="https://moskol.netlify.app" target="_blank" rel="noreferrer">View Live</a></button>
-              <button type="button" className="btn code-btn m-2"><a href='https://github.com/Ajyupdate/Moskol-Engineering-Website' target="_blank" rel="noreferrer"> View Code </a></button>
+              <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://moskol.netlify.app" target="_blank" rel="noreferrer">View Live</a></button>
+              <button type="button" className="btn code-btn m-2" data-aos="flip-left"><a href='https://github.com/Ajyupdate/Moskol-Engineering-Website' target="_blank" rel="noreferrer"> View Code </a></button>
             </div>  
           </div>
           <div className="col-md-5">
@@ -72,8 +64,8 @@ const Projects = () => {
         It was mainly written with javascript</p>
 
         <div className='project-button-div'>
-          <button type="button" className="btn live-btn "><a href="https://ajyupdate.github.io/History-date-app/" target="_blank" rel="noreferrer">View Live</a></button>
-          <button type="button" className="btn code-btn m-2"><a href='https://github.com/Ajyupdate/History-date-app' target="_blank" rel="noreferrer"> View Code </a></button>
+          <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://ajyupdate.github.io/History-date-app/" target="_blank" rel="noreferrer">View Live</a></button>
+          <button type="button" className="btn code-btn m-2" data-aos="flip-down"><a href='https://github.com/Ajyupdate/History-date-app' target="_blank" rel="noreferrer"> View Code </a></button>
         </div>  
 
       </div>
@@ -112,8 +104,8 @@ const Projects = () => {
 
         <div className='project-button-div'>
         
-          <button type="button" className="btn live-btn "><a href="https://ajyupdate.github.io/Explicitsuccess.com-clone" target="_blank" rel="noreferrer">View Live</a></button>
-          <button type="button" className="btn code-btn m-2"><a href='https://github.com/Ajyupdate/Explicitsuccess.com-clone' target="_blank" rel="noreferrer"> View Code </a></button>
+          <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://ajyupdate.github.io/Explicitsuccess.com-clone" target="_blank" rel="noreferrer">View Live</a></button>
+          <button type="button" className="btn code-btn m-2" data-aos="flip-right"><a href='https://github.com/Ajyupdate/Explicitsuccess.com-clone' target="_blank" rel="noreferrer"> View Code </a></button>
         </div>  
       
       </div>
@@ -154,8 +146,8 @@ const Projects = () => {
                   
                   <div className='project-button-div'>
     
-                    <button type="button" className="btn live-btn "><a href="https://ajyupdate.github.io/My-Phone-calculator" target="_blank" rel="noreferrer">View Live</a></button>
-                    <button type="button" className="btn code-btn m-2"><a href='https://github.com/Ajyupdate/My-Phone-calculator' target="_blank" rel="noreferrer"> View Code </a></button>
+                    <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://ajyupdate.github.io/My-Phone-calculator" target="_blank" rel="noreferrer">View Live</a></button>
+                    <button type="button" className="btn code-btn m-2" data-aos="flip-right"><a href='https://github.com/Ajyupdate/My-Phone-calculator' target="_blank" rel="noreferrer"> View Code </a></button>
                   </div>  
                 </div>
                 <div className="col-md-5">
