@@ -33,6 +33,20 @@ body{
   margin-right: 2em;
   color: rgb(65, 122, 122);
 }
+.nav-item a{
+  color: rgb(84, 133, 116);
+ }
+ .nav-item a:hover{
+  text-decoration: none;
+  background: rgb(84, 133, 116);
+  border-radius: 30px;
+  padding: 10px;
+  color: rgb(84, 133, 116);
+  
+ }
+ .navbar-light{
+   background-color: rgb(255, 255, 255);
+ }
 /* .accordion{
   width: 80%;
 }  */
@@ -46,20 +60,8 @@ body{
   width: 100%;
 }
 
-.nav-item a{
- color: rgb(84, 133, 116);
-}
-.nav-item a:hover{
- text-decoration: none;
- background: rgb(84, 133, 116);
- border-radius: 30px;
- padding: 10px;
- color: rgb(84, 133, 116);
- 
-}
-.navbar-light{
-  background-color: rgb(255, 255, 255);
-}
+
+
 .about-button-div button a{
   text-decoration: none !important;
   color: white;
