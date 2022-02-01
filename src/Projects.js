@@ -26,7 +26,7 @@ const Projects = () => {
             react hooks and routers...</p>
 
             
-            <div className='project-button-div'>
+            <div className='project-button-div '>
     
               <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://moskol.netlify.app" target="_blank" rel="noreferrer">View Live</a></button>
               <button type="button" className="btn code-btn m-2" data-aos="flip-left"><a href='https://github.com/Ajyupdate/Moskol-Engineering-Website' target="_blank" rel="noreferrer"> View Code </a></button>
@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
           <div className="col-md-5">
             <div className='row view-button'>
-              <div className='col-md-6'>
+              <div className='col-md-6 mt-4'>
                 <img  src={moskolHome} className='img-fluid' height={800 } alt='A snap of the website in dektop mode'/>
               </div>
 
@@ -72,7 +72,7 @@ const Projects = () => {
 
       <div className="col-md-5">
         <div className='row'>
-          <div className='col-md-6'>
+          <div className='col-md-6 mt-4'>
             <img  src={historyDate} className='img-fluid' height={300 } alt='A snap of the app'/>
           </div>
           <div className='col-md-6'>
@@ -112,7 +112,7 @@ const Projects = () => {
 
       <div className="col-md-5">
         <div className='row'>
-          <div className='col-md-6'>
+          <div className='col-md-6 mt-4'>
           <img  src={explicit} className='img-fluid' height={300 } alt='A Snap of the website in mobile view'/>
           </div>
 
@@ -152,7 +152,7 @@ const Projects = () => {
                 </div>
                 <div className="col-md-5">
                   <div className='row'>
-                    <div className='col-md-6'>
+                    <div className='col-md-6 mt-4'>
                       <img  src={calculator} className='img-fluid' height={300 } alt='the snap'/>
                     </div>
 
