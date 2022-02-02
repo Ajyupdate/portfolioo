@@ -22,7 +22,7 @@ const About = () => {
 
                 <div className=' about-button-div row m-5'>
                 <button type="button"  data-aos="fade-down" className="btn contact-btn  mb-1"><Link to="/Contact">Contact Ajibade</Link></button>
-                <button type="button"   data-aos="fade-right" className="btn download-btn "><a href={EMMANUEL} download="EMMANUEL.pdf"> Download Resume </a></button>
+                <button type="button"   data-aos="fade-right" className="btn download-btn "><a href={EMMANUEL} download="EMMANUEL.pdf"> Download My Resume </a></button>
 
 
                     
