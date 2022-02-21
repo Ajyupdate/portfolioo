@@ -1,5 +1,5 @@
 import Ajibade from './image/Ajibade.jpg'
-import EMMANUEL from './cv/EMMANUEL.pdf'
+import myResume from './cv/myResume.pdf'
 import { Link } from 'react-router-dom';
 const About = () => {
     return ( 
@@ -22,7 +22,7 @@ const About = () => {
 
                 <div className=' about-button-div row m-5'>
                 <button type="button"  data-aos="fade-down" className="btn contact-btn  mb-1"><Link to="/Contact">Contact Ajibade</Link></button>
-                <button type="button"   data-aos="fade-right" className="btn download-btn "><a href={EMMANUEL} download="EMMANUEL.pdf"> Download My Resume </a></button>
+                <button type="button"   data-aos="fade-right" className="btn download-btn "><a href={myResume} download="myResume.pdf"> Download My Resume </a></button>
 
 
                     
