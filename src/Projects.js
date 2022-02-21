@@ -29,8 +29,8 @@ const Projects = () => {
 
               <div className='project-button-div '>
       
-                <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://moskol.netlify.app" target="_blank" rel="noreferrer">View Live</a></button>
-                <button type="button" className="btn code-btn m-2" data-aos="flip-left"><a href='https://github.com/Ajyupdate/Moskol-Engineering-Website' target="_blank" rel="noreferrer"> View Code </a></button>
+                <button type="button" className="btn live-btn" data-aos="flip-up"><a href="https://githubusersearch14.netlify.app/" target="_blank" rel="noreferrer">View Live</a></button>
+                <button type="button" className="btn code-btn m-2" data-aos="flip-left"><a href='https://github.com/Ajyupdate/Search-App-for-github-users' target="_blank" rel="noreferrer"> View Code </a></button>
               </div>  
             </div>
             <div className="col-md-5">
