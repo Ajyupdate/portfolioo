@@ -4,14 +4,13 @@ const Navbar = () => {
         <div>
             
 
-
             <nav className=" navbar navbar-light  fixed-top">
             <div className="container-fluid">
               <Link className="navbar-brand" to="/" data-aos="fade-right"><span className="Ajibade">AJIBADE</span> <span className="Emmanuel">EMMANUEL</span></Link>
               <button className="navbar-toggler" data-aos="fade-left"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div className="offcanvas offcanvas-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
                   <h5 className="offcanvas-title" id="offcanvasNavbarLabel" data-aos="fade-up"><span className="Ajibade">AJIBADE</span> <span className="Emmanuel">EMMANUEL</span></h5>
                   <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -19,7 +18,7 @@ const Navbar = () => {
                 <div className="offcanvas-body">
                   <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li className="nav-item">
-                      <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                      <Link className="nav-link active"  aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link"  to="About">About me</Link>

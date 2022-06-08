@@ -119,10 +119,12 @@ button .rounded{
 .list-inline-item:focus-within{
   transform: translateY(-5px);
 }
-.send-button{
+.send-button button{
   text-decoration: none !important;
   background: rgb(84, 133, 116);
   border-radius: 10px;
+  width: 100%;
+  color: white;
 }
 .social-media-div{
   display: flex;

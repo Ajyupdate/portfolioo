@@ -4,10 +4,30 @@ import gmailIcon from './image/gmailIcon.jpg'
 import TwitterIcon from './image/TwitterIcon.jpg'
 import watsappIcon from './image/watsappIcon.jpg'
 import linkdinIcon from './image/linkdinIcon.svg'
+import { useState } from 'react/cjs/react.development'
 
 
 
 const Contact = () => {
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+    const [isPending, setIsPending] = useState(false)
+
+    const handleSubmit =(e) => {
+        e.preventDefault()
+        const details = {email, name, message};
+        setIsPending(true)
+
+        fetch('http://localhost:8000', {
+        method: 'POST',
+        headers : {"Content-Type": "application/json"},
+        body: JSON.stringify(details)
+        }).then(() =>{
+            console.log('new message added')
+            setIsPending(false)
+        })
+    }
     
     
     return ( 
@@ -17,26 +37,29 @@ const Contact = () => {
             <div className="container text-center">
                 
                 <div className="contact-form">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" data-aos="fade-right" className="form-label">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                            <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} id="exampleInputEmail1" aria-describedby="emailHelp"/>
                             <div id="emailHelp" data-aos="fade-left" className="form-text">I will never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="exampleInputText1" data-aos="fade-right" className="form-label">Your Name</label>
-                            <input type="Text" className="form-control" id="exampleInputText1"/>
+                            <label htmlFor="exampleInputText1" value={name} data-aos="fade-right" className="form-label">Your Name</label>
+                            <input type="Text" className="form-control" onChange={(e) => setName(e.target.value)} id="exampleInputText1"/>
                         </div>
                         
                         <div className="mb-3">
-                            <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
-                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label htmlFor="exampleFormControlTextarea1" value={message} className="form-label">Message</label>
+                            <textarea className="form-control" onChange={(e) => setMessage(e.target.value)} id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
 
-                        <div className="d-grid gap-2 send-button">
-                            <button className="btn"  type="button">Send</button>
-                        </div>
-
+                        {!isPending && <div className='send-button'>
+                            <button >Send</button>
+                        </div>}
+                        {isPending && <div className="d-grid gap-2 send-button">
+                            <button disabled>Send</button>
+                        </div>}
+                        
                         
                     </form>
                     <div className="social-contact-div">
