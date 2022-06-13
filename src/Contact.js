@@ -4,7 +4,7 @@ import gmailIcon from './image/gmailIcon.jpg'
 import TwitterIcon from './image/TwitterIcon.jpg'
 import watsappIcon from './image/watsappIcon.jpg'
 import linkdinIcon from './image/linkdinIcon.svg'
-import { useState } from 'react/cjs/react.development'
+import { useState } from 'react'
 
 
 
